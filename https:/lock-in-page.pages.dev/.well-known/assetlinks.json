@@ -1,0 +1,15 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls",
+            "delegate_permission/common.get_login_creds"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.lockin.quotes",
+            "sha256_cert_fingerprints": [
+                "47:2E:4A:18:0B:08:61:72:96:CE:F8:70:4E:99:30:F3:0B:31:EB:85:07:2A:86:0E:ED:20:21:CE:7D:BD:B2:D9"
+            ]
+        }
+    }
+]
