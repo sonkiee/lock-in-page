@@ -3,7 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lock-in – Daily Quotes</title>
+
+    <!-- SEO Meta Tags -->
+    <title>Lock-in: Daily Motivational Quotes App to Stay Focused</title>
+    <meta
+      name="description"
+      content="Download Lock-in, the daily motivational quotes app designed to keep you focused and disciplined. Get one powerful message a day with zero noise. Available on Android."
+    />
+    <meta
+      name="keywords"
+      content="daily quotes app, motivation, discipline, stoic quotes, focus app, self improvement app, inspirational quotes, android widgets"
+    />
+
+    <link rel="canonical" href="https://lock-in-page.pages.dev/" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Lock-in – Daily Quotes App" />
+    <meta
+      property="og:description"
+      content="One quote a day. Stay focused and disciplined with Lock-in."
+    />
+    <meta property="og:url" content="https://lock-in-page.pages.dev/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Lock-in – Daily Quotes App" />
+    <meta
+      name="twitter:description"
+      content="Daily motivation to keep you locked in."
+    />
+
+    <!-- JSON-LD Schema Markup for SoftwareApplication -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "Lock-in",
+        "operatingSystem": "Android, iOS, iPhone, iPad",
+        "applicationCategory": "LifestyleApplication",
+        "description": "Daily motivational quotes app designed to keep you focused, disciplined, and mentally locked in. Features unique personality-driven motivation.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    </script>
+
     <style>
       body {
         margin: 0;
@@ -67,6 +114,17 @@
         text-align: left;
       }
 
+      .section h2 {
+        font-size: 24px;
+        margin-bottom: 8px;
+        letter-spacing: -0.5px;
+      }
+
+      .section > p {
+        color: #b5b5b5;
+        margin-bottom: 30px;
+      }
+
       .features {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -76,19 +134,20 @@
 
       .card {
         background: #1a1a1d;
-        padding: 20px;
+        padding: 24px;
         border-radius: 16px;
+        border: 1px solid #2a2a2e;
       }
 
       .card h3 {
         margin: 0 0 10px;
-        font-size: 16px;
+        font-size: 18px;
       }
 
       .card p {
         margin: 0;
         color: #aaa;
-        font-size: 14px;
+        font-size: 15px;
         line-height: 1.5;
       }
 
@@ -112,7 +171,9 @@
 
   <body>
     <div class="container">
-      <div class="badge">Daily Motivation App</div>
+      <div class="badge">
+        Daily Motivation App for Android & iOS (iOS coming soon)
+      </div>
 
       <h1>Lock-in</h1>
 
@@ -121,9 +182,81 @@
         locked in. One message a day. No noise. Just clarity.
       </p>
 
-      <a class="cta" href="https://play.google.com/">
+      <a
+        class="cta"
+        target="_blank"
+        href="https://play.google.com/store/apps/details?id=com.lockin.quotes"
+      >
         Download on Play Store
       </a>
+
+      <!-- SEO & CRO Features Section -->
+      <div class="section">
+        <h2>Why download Lock-in?</h2>
+        <p>A minimalist approach to daily discipline.</p>
+
+        <div class="features">
+          <div class="card">
+            <h3>Choose Your Personality</h3>
+            <p>
+              Select the voice that pushes you best. Get grounded by a Stoic
+              philosopher, yelled at by a Gym Instructor, or encouraged by Mom.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Zero Distractions</h3>
+            <p>
+              No infinite scrolling feeds. Receive exactly one highly-curated
+              notification a day to lock in your mindset, then get back to work.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Build the Habit</h3>
+            <p>
+              Consistent, daily reminders engineered to build long-term
+              discipline and keep your most important goals front and center.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SEO FAQ Section -->
+      <div class="section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="features">
+          <div class="card">
+            <h3>Is the Lock-in app free?</h3>
+            <p>
+              Yes, Lock-in is free to download on the Google Play Store. Start
+              building your daily discipline immediately.
+            </p>
+          </div>
+          <div class="card">
+            <h3>How do the daily quotes work?</h3>
+            <p>
+              Our background scheduling system delivers one notification
+              straight to your device every 24 hours, based on the personality
+              you choose.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Final CTA Section -->
+      <div class="section" style="text-align: center">
+        <h2>Stay Locked In</h2>
+        <p class="subtitle">
+          Download Lock-in and build daily focus, discipline, and clarity.
+        </p>
+
+        <a
+          class="cta"
+          target="_blank"
+          href="https://play.google.com/store/apps/details?id=com.lockin.quotes"
+        >
+          Get the App
+        </a>
+      </div>
 
       <div class="footer">
         <div>
@@ -131,7 +264,7 @@
           <script>
             document.write(new Date().getFullYear());
           </script>
-          Lock-in – Daily Quotes. All rights reserved.
+          Lock-in – Daily Quotes App. All rights reserved.
         </div>
 
         <div style="margin-top: 10px">
@@ -142,15 +275,11 @@
       </div>
     </div>
 
+    <!-- Firebase SDK -->
     <script type="module">
-      // Import the functions you need from the SDKs you need
       import { initializeApp } from "https://www.gstatic.com/firebasejs/12.12.1/firebase-app.js";
       import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.12.1/firebase-analytics.js";
-      // TODO: Add SDKs for Firebase products that you want to use
-      // https://firebase.google.com/docs/web/setup#available-libraries
 
-      // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
       const firebaseConfig = {
         apiKey: "AIzaSyAqdxYZhD4rIWRejR1tLlIigbu-Fbaa4Kc",
         authDomain: "lock-in-f36b9.firebaseapp.com",
@@ -161,7 +290,6 @@
         measurementId: "G-ZLGTQR0R7S",
       };
 
-      // Initialize Firebase
       const app = initializeApp(firebaseConfig);
       const analytics = getAnalytics(app);
     </script>
