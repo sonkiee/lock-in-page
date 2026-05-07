@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lock-in-page.pages.dev/sitemap.xml
+Sitemap: https://lockin.page/sitemap.xml
